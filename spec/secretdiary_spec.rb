@@ -6,9 +6,9 @@ describe SecretDiary do
     it 'initializes state as an instance of Security' do
       expect(subject.state).to be_instance_of Security
     end
-    
+
     it 'sets the diary to locked' do
-      expect(subject.state).to be true
+      expect(subject.state).to be_locked
     end
   end
 

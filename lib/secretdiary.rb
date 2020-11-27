@@ -32,11 +32,11 @@ attr_reader :state
   end
 
   def add_entry
-    @state.lock? ? "Diary locked!" : @contents.add
+    @state.locked? ? "Diary locked!" : @contents.add
   end
 
   def get_entries
-    @state.lock? ? "Diary locked!" : @contents.get
+    @state.locked? ? "Diary locked!" : @contents.get
   end
 
 end
