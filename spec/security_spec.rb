@@ -17,11 +17,11 @@ describe Security do
   end
 
   it 'returns locked (true) when diary is locked' do
-    expect(subject.lock?).to be true
+    expect(subject.locked?).to be true
   end
 
   it 'returns unlocked (false) when diary is unlocked' do
     subject.unlock
-    expect(subject.lock?).to be false
+    expect(subject.locked?).to be false
   end
 end

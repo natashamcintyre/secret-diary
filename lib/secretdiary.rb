@@ -12,19 +12,19 @@
 
 # understands user instructions?
 
-require_relative './security.rb'
+# require_relative './security.rb'
 require_relative './entry.rb'
 
 class SecretDiary
-attr_reader :state
+  attr_reader :state
 
   def initialize
     @contents = Entry.new
-    @state = Security.new
+    @state = true
   end
 
   def unlock
-    @state.unlock
+    @state = false
   end
 
   def lock

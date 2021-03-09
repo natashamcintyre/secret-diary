@@ -15,7 +15,7 @@ attr_reader :locked
     @locked = false
   end
 
-  def lock?
+  def locked?
     @locked
   end
 
